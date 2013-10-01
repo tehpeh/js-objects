@@ -5,10 +5,9 @@ window.onload = function() {
   loadItems();
   bindCheckBoxes();
 
-  // bind click even for clear done button
+  // bind click event for clear done button
   document.getElementById("clear-done").onclick = function() {
-    // CODE HERE
-    // but do the deleting INSIDE the todoList object
+    todoList.clearDone();
     loadItemCount();
     loadItems();
     bindCheckBoxes();
